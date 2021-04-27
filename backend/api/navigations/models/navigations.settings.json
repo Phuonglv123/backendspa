@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "name": "Navigations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "has_child": {
+      "type": "boolean"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "enable": {
+      "type": "boolean"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "children": {
+      "collection": "navigations",
+      "via": "navigation"
+    },
+    "navigation": {
+      "model": "navigations",
+      "via": "children"
+    }
+  }
+}

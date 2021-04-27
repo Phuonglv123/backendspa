@@ -1,0 +1,7 @@
+./frontend/node_modules
+./frontend/yarn.lock
+./frontend/.nuxt
+
+./backend/node_modules
+./backend/yarn.lock
+./backend/.cache
